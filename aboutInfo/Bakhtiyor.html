@@ -1,252 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-            crossorigin="anonymous"></script>
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        
-                /* Стили для section */
-                section {
-                    font-family: Arial, sans-serif; /* Шрифт по умолчанию для section */
-                    font-size: 16px;
-                    line-height: 1.5;
-                    background-color: #f0f0f0;
-                    padding: 20px;
-                }
-        
-                /* Стили для div с приоритетом */
-                .custom-div {
-                    font-family: 'Roboto', sans-serif !important; /* Использование Roboto с приоритетом */
-                    font-size: 18px;
-                    line-height: 1.6;
-                    padding: 20px;
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                    background-color: #fff;
-                }
-            </style>
-    <title>Мералиев Бахтиёр Аскарович</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Мералиев Бахтиёр Аскарович — профиль исследователя</title>
+    <meta name="description" content="Мералиев Бахтиёр Аскарович — старший научный сотрудник проекта AP27510301, исследователь в области машинного обучения и науки о данных." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-<section class="sub-header">
-    <nav>
-        <!--<a href=""><img src="./images/voice.jpg" alt=""></a>-->
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-close" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="../index.html">ГЛАВНАЯ</a></li>
-                <li><a href="../oProjecte.html">О ПРОЕКТЕ</a></li>
-                <li><a href="../about.html">ИССЛЕДОВАТЕЛЬСКАЯ ГРУППА</a></li>
-                <li><a href="../course.html">ПЛАН РЕАЛИЗАЦИИ РАБОТ</a></li>
-                <li><a href="../blog.html">НАУЧНЫЕ И ПРИКЛАДНЫЕ РЕЗУЛЬТАТЫ</a></li>
-                
-            </ul>
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="site-logo" href="../index.html">AP27510301</a>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Открыть меню</span>
+                <span class="nav-toggle__bars" aria-hidden="true"></span>
+            </button>
+            <nav class="site-nav" data-nav id="primary-navigation">
+                <div class="site-nav__inner">
+                    <button class="nav-close" type="button" data-nav-close aria-label="Закрыть меню">
+                        <span class="sr-only">Закрыть меню</span>
+                        <span class="nav-close__icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="site-nav__list">
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="../oProjecte.html">О проекте</a></li>
+                        <li><a href="../about.html">Исследовательская группа</a></li>
+                        <li><a href="../course.html">План работ</a></li>
+                        <li><a href="../blog.html">Результаты</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
+    </header>
 
-    <h1>Мералиев Бахтиёр Аскарович</h1>
-    <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" src="../aboutImage/2.jpg"  width="140" height="140"/>
+    <main>
+        <section class="hero hero--compact">
+            <div class="container hero__content">
+                <p class="status-pill">Старший научный сотрудник</p>
+                <h1 class="hero__title">Мералиев Бахтиёр Аскарович</h1>
+                <p class="hero__text">
+                    Докторант образовательной программы «Компьютерные науки» (SDU University, 2024–2027). Специализируется на машинном обучении,
+                    NLP и предиктивной аналитике. В проекте отвечает за разработку алгоритмов и прикладные эксперименты.
+                </p>
+            </div>
+        </section>
 
-    </div>
-</section>
-<section class="course">
-    <div class="custom-div">
-        <p><span style="font-weight: 700;">Старший научный сотрудник:</span> разработка алгоритмов, выполнение текущих задач проекта.&nbsp;
-            <br>
-            <br>
-        Индекс Хирша: 2
-        <br>
-        <br>
-        Scopus Author ID: 
-        
-        <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base
-        u-block-d0cc-12" href="https://www.scopus.com/authid/detail.uri?authorId=57238603500" target="_blank" style="background-image: none; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0">
-        57238603500</a>
-        <br>
-        <br>
-        ORCID:
-            <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base
-        u-block-d0cc-12" href="https://orcid.org/0000-0002-5640-4966" target="_blank" style="background-image: none; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0">
-        0000-0002-5640-4966</a>
-        <br>
-        <br>
-        
-        <span style="font-weight: 700;">Краткое резюме: </span>
-            
-        Мералиев Бахтиёр Аскарович — докторант образовательной программы «Компьютерные науки» в SDU University (2024–2027), руководитель образовательной программы «Информационные системы» и старший преподаватель кафедры компьютерных наук. Научные интересы включают машинное обучение, науку о данных, обработку естественного языка (NLP), предиктивную аналитику и интеллектуальный анализ данных. Активно участвует в научно-исследовательской деятельности и является автором публикаций в международных изданиях.
-         
-        &nbsp;
-        <br>
-        <br>
-        <span style="font-weight: 700;">Образование:</span> Докторант в SDU University по специальности "Компьютерные Науки" (2024–2027);
-        Магистр по специальности "Компьютерные Науки".
-        <br>
-        <br>
-    <span style="font-weight: 700;">Имеет ряд публикаций, обосновывающих исследование по
-        данному проекту:</span>
-        <br>
-        <br>
-        1. Bakhtiyor Meraliyev; Aruzhan Karabayeva; Tolganay Altynbekova; Yelaman Nematov. 
-        Attrition Rate Measuring In Human Resource Analytics Using Machine Learning. 2023 17th International Conference on Electronics Computer and Computation (ICECCO).
-            <br>
-            URL:<a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-block-d0cc-6"
-              href="https://ieeexplore.ieee.org/document/10146602/" rel="noopener noreferrer target="_blank" style="background-image: none; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0">
-              DOI:10.1109/icecco58239.2023.10146602</a>
-              <br>
-              <br>
-       2. Bakhtiyor Meraliyev; Balzhan Alibekova; Islana Bekturganova. 
-       Machine Learning as an effective tool for Human Resource management in recruiting process in the higher educational field. 2023 17th International Conference on Electronics Computer and Computation (ICECCO).
+        <section class="section">
+            <div class="container profile-section">
+                <div class="profile-card">
+                    <img src="../aboutImage/2.jpg" alt="Мералиев Бахтиёр Аскарович" />
+                    <p><strong>Индекс Хирша:</strong> 2</p>
+                    <p><strong>Scopus Author ID:</strong> <a href="https://www.scopus.com/authid/detail.uri?authorId=57238603500" target="_blank" rel="noopener">57238603500</a></p>
+                    <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5640-4966" target="_blank" rel="noopener">0000-0002-5640-4966</a></p>
+                    <p><strong>Образование:</strong> Докторант и магистр по компьютерным наукам.</p>
+                    <p><span style="font-weight:700;">Старший научный сотрудник:</span> разработка алгоритмов, выполнение текущих задач проекта.</p>
+                    <p><span style="font-weight:700;">Краткое резюме:</span> Мералиев Бахтиёр Аскарович — докторант образовательной программы «Компьютерные науки» в SDU University (2024–2027), руководитель образовательной программы «Информационные системы» и старший преподаватель кафедры компьютерных наук. Научные интересы: машинное обучение, наука о данных, NLP, предиктивная аналитика и интеллектуальный анализ данных.</p>
+                    
+                </div>
+                <div class="content-card rich-text legacy-copy">
+                  
+                    <p><span style="font-weight:700;">Публикации:</span></p>
+                    <ol>
+                        <li>Bakhtiyor Meraliyev, Aruzhan Karabayeva, Tolganay Altynbekova, Yelaman Nematov. <em>Attrition Rate Measuring in Human Resource Analytics using Machine Learning</em>, ICECCO 2023. DOI: <a href="https://doi.org/10.1109/ICECCO58239.2023.10146602" target="_blank" rel="noopener">10.1109/ICECCO58239.2023.10146602</a></li>
+                        <li>Bakhtiyor Meraliyev, Balzhan Alibekova, Islana Bekturganova. <em>Machine Learning as an effective tool for Human Resource management in recruiting process</em>, ICECCO 2023. DOI: <a href="https://doi.org/10.1109/ICECCO58239.2023.10147133" target="_blank" rel="noopener">10.1109/ICECCO58239.2023.10147133</a></li>
+                        <li>B. Meraliyev, K. Kongratbayev, M. Bekbalanova, C. Turan. <em>A Computer Vision Supported Investigation on Anxiety-Success Relationship in Educational Processes</em>, SIST 2021. DOI: <a href="https://doi.org/10.1109/SIST50301.2021.9465880" target="_blank" rel="noopener">10.1109/SIST50301.2021.9465880</a></li>
+                        <li>B. Meraliyev, K. Kongratbayev, N. Sultanova. <em>Content Analysis of Extracted Suicide Texts</em>, SIST 2021. DOI: <a href="https://doi.org/10.1109/SIST50301.2021.9466001" target="_blank" rel="noopener">10.1109/SIST50301.2021.9466001</a></li>
+                        <li>D. Kuanyshbay, A. Shoiynbek, K. Rabbany, A. Mukhametzhanov, B. Meraliyev. <em>Сравнение машинного обучения и обучения с подкреплением для распознавания депрессии по речи</em>, Известия НАН РК (2025). DOI: <a href="https://doi.org/10.32014/2025.2518-1726.350" target="_blank" rel="noopener">10.32014/2025.2518-1726.350</a></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <br>
-        URL: <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none
-        u-text-palette-1-base u-block-d0cc-7" href="https://ieeexplore.ieee.org/document/10147133"
-                                rel="noopener noreferrer" target="_blank" style="background-image: none; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0">
-                                
-                                DOI:10.1109/icecco58239.2023.10147133</a>
-                                <br>
-                                <br>
-    3. Meraliyev, B.; Kongratbayev, K.; Bekbalanova, M.; Turan, C. 
-    A Computer Vision Supported Investigation on Anxiety-Success Relationship in Educational Processes.
-    SIST 2021 - 2021 IEEE International Conference on Smart Information Systems and Technologies.
-        <br>
-        URL:
-            
-                                                <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none
-                                             u-text-palette-1-base u-block-d0cc-8" href="https://ieeexplore.ieee.org/document/9465880"
-                                                                                rel="noopener noreferrer" target="_blank" style="background-image: none; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0">
-                                                                                
-                                                                                DOI:10.1109/SIST50301.2021.9465880</a>
-    
-                                                                                <br>
-                                                                                <br>
-       4. Meraliyev, B.; Kongratbayev, K.; Sultanova, N. 
-       Content Analysis of Extracted Suicide Texts from Social Media Networks by Using Natural Language Processing and Machine Learning Techniques.
-        
-         SIST 2021 - 2021 IEEE International Conference on Smart Information Systems and Technologies.
-                                                      
-         <br>
-       URL: <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none
-        u-text-palette-1-base u-block-d0cc-7" href="https://ieeexplore.ieee.org/document/9466001"
-          rel="noopener noreferrer" target="_blank" style="background-image: none; padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 0">
-                                                                                                  
-          DOI:10.1109/SIST50301.2021.9466001</a>
+    <footer class="site-footer">
+        <div class="container site-footer__grid">
+            <div>
+                <p class="status-pill">Научно-технический проект</p>
+                <p>AP27510301 — технология распознавания мошеннических действий с применением алгоритмов искусственного интеллекта.</p>
+            </div>
+            <div>
+                <strong>Навигация</strong>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../oProjecte.html">О проекте</a></li>
+                    <li><a href="../about.html">Команда</a></li>
+                    <li><a href="../course.html">План работ</a></li>
+                    <li><a href="../blog.html">Результаты</a></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Контакты</strong>
+                <p>НАО «Университет Нархоз»<br />ул. Жандосова, 55, Алматы, Казахстан, 050035</p>
+                <a href="mailto:shoiynbek.temirlan@narxoz.kz">shoiynbek.temirlan@narxoz.kz</a>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <small>© 2025 Университет Нархоз. Все права защищены.</small>
+        </div>
+    </footer>
 
-            <br>
-            <br>
-            5. Kuanyshbay, D., Shoiynbek, A., Rabbany, K., Mukhametzhanov, A., & Meraliyev, B. (2025). СРАВНЕНИЕ МАШИННОГО ОБУЧЕНИЯ И ОБУЧЕНИЯ С ПОДКРЕПЛЕНИЕМ ДЛЯ РАСПОЗНАВАНИЯ ДЕПРЕССИИ ПО РЕЧИ. Известия НАН РК. Серия физико-математическая, (2), 155–168.
-            <br>
-            DOI:  https://doi.org/10.32014/2025.2518-1726.350
-            <br>
-            URL: <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base
-                                                                         u-block-6ce7-10" href="https://ph.pollub.pl/index.php/iapgos/article/view/234" rel="noopener noreferrer"
-                    target="_blank" style="background-image: none; padding-top: 0; padding-bottom: 0; padding-left: 0;
-                                                                          padding-right: 0">https://journals.nauka-nanrk.kz/physics-mathematics/article/view/7003</a></p>
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-    </div>
-</section>
-
+    <script src="../main.js" defer></script>
 </body>
-
-<footer class="page-footer font-small unique-color-dark" style="padding-left: 0px;">
-    <section class="footer">
-        <div style="background-color: #6351ce;">
-            <div class="container">
-
-                <!-- Grid row-->
-
-                <!-- Grid row-->
-
-            </div>
-        </div>
-
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left mt-5">
-
-            <!-- Grid row -->
-            <div class="row mt-3">
-
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-5 mx-auto mb-4">
-
-                    <!-- Content -->
-                    <h6 class="text-uppercase font-weight-bold">НАУЧНО-ТЕХНИЧЕСКИЙ ПРОЕКТ</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>AP27510301 Разработка технологии распознавания мошеннических действий в процессе телефонного разговора и/или обмена текстовыми сообщениями в мессенджерах на основе алгоритмов искусственного интеллекта
-                        в рамках грантового финансирования по конкурсу молодых ученых по научным и (или) научно-техническим проектам на
-                        2025-2027 годы</p>
-
-                </div>
-                <!-- Grid column -->
-
-
-               <!--  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                
-                    <h6 class="text-uppercase font-weight-bold">ССЫЛКИ</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="../index.html">ГЛАВНАЯ</a>
-                    </p>
-                    <p>
-                        <a href="../oProjecte.html">О ПРОЕКТЕ</a>
-                    </p>
-                    <p>
-                        <a href="../about.html">ИССЛЕДОВАТЕЛЬСКАЯ ГРУППА</a>
-                    </p>
-                    <p>
-                        <a href="../course.html">ПЛАН РЕАЛИЗАЦИИ РАБОТ</a>
-                    </p>
-                    <p>
-                        <a href="../blog.html">НАУЧНЫЕ И ПРИКЛАДНЫЕ РЕЗУЛЬТАТЫ</a>
-                    </p>
-
-                </div> -->
-                <!-- Grid column -->
-
-                <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <h6 class="text-uppercase font-weight-bold">КОНТАКТНАЯ ИНФОРМАЦИЯ</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <i class="fas fa-home mr-3"></i> НАО «Университет Нархоз» <br>ул. Жандосова, 55 г. Алматы, Казахстан, 050035</p>
-                    <p>
-                        <i class="fas fa-envelope mr-3"></i><a href="mailto:shoiynbek.temirlan@narxoz.kz" > shoiynbek.temirlan@narxoz.kz</a>
-                    <div class="icons">
-                    <!--    <a href="https://www.facebook.com/groups/625242165468729">
-                            <i class="fab fa-facebook"> </i>
-                        </a>-->
-                        <!--                <i class="fab fa-twitter"></i>-->
-                        <!--                <i class="fab fa-instagram"></i>-->
-                        <!--                <i class="fab fa-linkedin"></i>-->
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-    </section>
-    <script src="index.js"></script>
-</footer>
 </html>
+

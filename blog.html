@@ -1,475 +1,176 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>НАУЧНЫЕ И ПРИКЛАДНЫЕ РЕЗУЛЬТАТЫ</title>
-    <style>
-        /* Общие стили для страницы */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .sub-header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .sub-header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        .nav-links ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-
-        .nav-links ul li {
-            margin-right: 20px;
-        }
-
-        .nav-links ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: color 0.3s;
-        }
-
-        .nav-links ul li a:hover {
-            color: #f2f2f2;
-        }
-
-        .fa-bars,
-        .fa-close {
-            font-size: 1.5em;
-            cursor: pointer;
-            display: none;
-        }
-
-        @media screen and (max-width: 768px) {
-            .nav-links {
-                position: absolute;
-                background-color: #333;
-                top: 80px;
-                right: -200px;
-                width: 200px;
-                height: 100%;
-                transition: right 0.3s ease-in;
-            }
-
-            .nav-links ul {
-                flex-direction: column;
-                padding: 20px;
-            }
-
-            .nav-links ul li {
-                margin-bottom: 10px;
-            }
-
-            .fa-bars {
-                display: inline-block;
-            }
-
-            .fa-close {
-                display: none;
-            }
-
-            .nav-links.active {
-                right: 0;
-            }
-        }
-
-        /* Стили для ленты новостей */
-        .news-container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-
-        .news-item {
-            background-color: #f9f9f9;
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 5px;
-        }
-
-        .category {
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        .news-title {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-        }
-
-        .news-description {
-            color: #666;
-            margin-bottom: 10px;
-        }
-        
-        /* Стили для модального окна */
-        .modal {
-            display: none; /* Скрываем модальные окна по умолчанию */
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .modal-content {
-            margin: 15% auto;
-            padding: 20px;
-            width: 80%;
-            max-width: 600px;
-            background-color: white;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .close {
-            color: #aaa;
-            font-size: 28px;
-            font-weight: bold;
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            cursor: pointer;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-        crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-        <script src="/blog.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Научные и прикладные результаты — AP27510301</title>
+    <meta name="description" content="Публикации, стажировки и прикладные результаты проекта AP27510301 по распознаванию мошеннических действий." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-<section class="sub-header">
-    <nav>
-        <!--<a href=""><img src="./images/voice.jpg" alt=""></a>-->
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-close" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="index.html">ГЛАВНАЯ</a></li>
-                <li><a href="oProjecte.html">О ПРОЕКТЕ</a></li>
-                <li><a href="about.html">ИССЛЕДОВАТЕЛЬСКАЯ ГРУППА</a></li>
-                <li><a href="course.html">ПЛАН РЕАЛИЗАЦИИ РАБОТ</a></li>
-                <li><a href="blog.html">НАУЧНЫЕ И ПРИКЛАДНЫЕ РЕЗУЛЬТАТЫ</a></li>
-            </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
-    <h1>НАУЧНЫЕ И ПРИКЛАДНЫЕ РЕЗУЛЬТАТЫ</h1>
-</section>
-
-<!--<div class="news-container">-->
-<!--    <div class="news-item">-->
-<!--        <div class="category">ПУБЛИКАЦИИ</div>-->
-<!--        -->
-<!--        <div class="news-title">1. Публикация статии в рецензируемом зарубежном журнале <a href="https://rsglobal.pl/index.php/ws/issue/view/301" target="_blank"> 'World Science'</a> 2024 году.</div>-->
-<!--        -->
-<!--        <div class="news-description">A REVIEW ON MACHINE LEARNING APPROACHES FOR THE DETECTION OF SUICIDAL TENDENCIES-->
-<!--            </div>-->
-<!--            <div class="news-description">Kazi Golam Rabbany, Aisultan Shoiynbek, Darkhan Kuanyshbay, Assylbek Mukhametzhanov, Akbayan Bekarystankyzy, & Temirlan Shoiynbek. (2024). A REVIEW ON MACHINE LEARNING APPROACHES FOR THE DETECTION OF SUICIDAL TENDENCIES. World Science, (3(85).-->
-<!--                <br> <a href="https://doi.org/10.31435/rsglobal_ws/30092024/8222" target="_blank">https://doi.org/10.31435/rsglobal_ws/30092024/8222</a></div>-->
-<!--                -->
-<!--                <div class="news-title">2. Публикация статии в рецензируемом зарубежном журнале <a href=https://www.internauka.org/journal/science/internauka/354 target="_blank"> 'Интернаука'</a> 2024 году.</div>-->
-<!--                <div class="news-description">A REVIEW OF DATA SOURCES FOR DETECTION OF SUICIDAL TENDENCIES</div>-->
-<!--                <div class="news-description">Assylbek Mukhametzhanov-->
-<!--                    Akbayan Bekarystankyzy,-->
-<!--                    Aisultan Shoiynbek,-->
-<!--                    Darkhan Kuanyshbay,-->
-<!--                    Temirlan Shoiynbek,-->
-<!--                    Kazi Golam Rabbanyю. И73 «Интернаука»: научный журнал – № 37(354). Часть 3. Москва, Изд. «Интернаука»,-->
-<!--                    2024.-->
-<!--                <br> <a href="https://www.internauka.org/archive2/internauka/37(354_3).pdf" target="_blank">https://www.internauka.org/archive2/internauka/37(354_3).pdf</a>-->
-<!--            </div>-->
-
-<!--            <div class="news-title">3. Публикация статии в рецензируемом в отечественном издании: <a href=hhttps://journals.nauka-nanrk.kz/physics-mathematics/article/view/7329 target="_blank"> '«Вестник НАН РК», № 1.'</a> 2025 году.</div>-->
-<!--            <div class="news-description">DETECTION OF SUICIDAL TENDENCIES IN REDDIT POSTS USING MACHINE LEARNING</div>-->
-<!--            <div class="news-description">K. Rabbany, A. Bekarystankyzy, A. Shoiynbek, D. Kuanyshbay, A. Mukhametzhanov. NEWS OF THE NATIONAL ACADEMY OF SCIENCESOF THE -->
-<!--                REPUBLIC OF KAZAKHSTAN PHYSICO-MATHEMATICAL SERIESISSN 1991-346XVolume 1. Namber 353 (2025). 270–282, <a href="https://journals.nauka-nanrk.kz/physics-mathematics/article/view/7329/4888">DOI: 10.32014/2025.2518-1726.339</a>,-->
-<!--                2025.-->
-<!--        </div>-->
-<!--    </div>-->
-
-<!--    <div class="news-item">-->
-<!--        <div class="category">СТАЖИРОВКА (ПОВЫШЕНИЕ КВАЛИФИКАЦИИ)</div>-->
-<!--        <div class="news-title">Стажировка в зарубежном вузе "Ho Chi Minh City Open University" 2024 году </div>-->
-<!--        <body>-->
-<!--            -->
-<!--            &lt;!&ndash; Ссылки на изображения &ndash;&gt;-->
-<!--            <a href="#" id="link1">Reserch report</a><br>-->
-<!--            <a href="#" id="link2">Plan of the internship Sh.Aisultan</a><br>-->
-<!--            <a href="#" id="link3">Certificate Sh.Aisultan</a><br>-->
-<!--            <a href="#" id="link4">Plan of the internship Sh.Temirlan</a><br>-->
-<!--            <a href="#" id="link5">Certificate Sh.Temirlan</a><br>-->
-<!--            -->
-<!--            &lt;!&ndash; Модальные окна &ndash;&gt;-->
-<!--            <div id="modal1" class="modal">-->
-<!--                <div class="modal-content">-->
-<!--                    <span class="close" id="close1">&times;</span>-->
-<!--                    <img src="./blogImage/Report_page-0001.jpg" alt="Фото 1">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            -->
-<!--            <div id="modal2" class="modal">-->
-<!--                <div class="modal-content">-->
-<!--                    <span class="close" id="close2">&times;</span>-->
-<!--                    <img src="./blogImage/Shoiynbek A_page-0001.jpg" alt="Фото 2">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            -->
-<!--            <div id="modal3" class="modal">-->
-<!--                <div class="modal-content">-->
-<!--                    <span class="close" id="close3">&times;</span>-->
-<!--                    <img src="./blogImage/Shoiynbek A certificate_page-0001.jpg" alt="Фото 3">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            -->
-<!--            <div id="modal4" class="modal">-->
-<!--                <div class="modal-content">-->
-<!--                    <span class="close" id="close4">&times;</span>-->
-<!--                    <img src="./blogImage/Shoiynbek T_page-0001.jpg" alt="Фото 4">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            -->
-<!--            <div id="modal5" class="modal">-->
-<!--                <div class="modal-content">-->
-<!--                    <span class="close" id="close5">&times;</span>-->
-<!--                    <img src="./blogImage/Shoiynbek T certificate_page-0001.jpg" alt="Фото 5">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            -->
-<!--            <script>-->
-<!--                // Функция для открытия модального окна-->
-<!--                function openModal(modalId, event) {-->
-<!--                    event.preventDefault(); // Отменяем стандартное действие ссылки-->
-<!--                    document.getElementById(modalId).style.display = "block";-->
-<!--                }-->
-<!--            -->
-<!--                // Функция для закрытия модального окна-->
-<!--                function closeModal(modalId) {-->
-<!--                    document.getElementById(modalId).style.display = "none";-->
-<!--                }-->
-<!--            -->
-<!--                // Привязка событий для открытия модальных окон-->
-<!--                document.getElementById('link1').onclick = function(event) {-->
-<!--                    openModal('modal1', event);-->
-<!--                };-->
-<!--                document.getElementById('link2').onclick = function(event) {-->
-<!--                    openModal('modal2', event);-->
-<!--                };-->
-<!--                document.getElementById('link3').onclick = function(event) {-->
-<!--                    openModal('modal3', event);-->
-<!--                };-->
-<!--                document.getElementById('link4').onclick = function(event) {-->
-<!--                    openModal('modal4', event);-->
-<!--                };-->
-<!--                document.getElementById('link5').onclick = function(event) {-->
-<!--                    openModal('modal5', event);-->
-<!--                };-->
-<!--            -->
-<!--                // Привязка событий для закрытия модальных окон-->
-<!--                document.getElementById('close1').onclick = function() {-->
-<!--                    closeModal('modal1');-->
-<!--                };-->
-<!--                document.getElementById('close2').onclick = function() {-->
-<!--                    closeModal('modal2');-->
-<!--                };-->
-<!--                document.getElementById('close3').onclick = function() {-->
-<!--                    closeModal('modal3');-->
-<!--                };-->
-<!--                document.getElementById('close4').onclick = function() {-->
-<!--                    closeModal('modal4');-->
-<!--                };-->
-<!--                document.getElementById('close5').onclick = function() {-->
-<!--                    closeModal('modal5');-->
-<!--                };-->
-<!--            -->
-<!--                // Закрытие модального окна при клике вне его-->
-<!--                window.onclick = function(event) {-->
-<!--                    let modals = ['modal1', 'modal2', 'modal3', 'modal4', 'modal5'];-->
-<!--                    modals.forEach(function(modalId) {-->
-<!--                        if (event.target == document.getElementById(modalId)) {-->
-<!--                            closeModal(modalId);-->
-<!--                        }-->
-<!--                    });-->
-<!--                };-->
-<!--            </script>-->
-<!--            -->
-<!--            -->
-<!--            </body>-->
-<!--    </div>-->
-<div class="news-item">
-    <div class="category">ПУБЛИКАЦИИ</div>
-    <div class="news-title"></div>
-    <div class="news-description">Планируется в 2025, 2026 и 2027 году</div>
-    <div class="news-description"></div>
-</div>
-<div class="news-item">
-    <div class="category">СТАЖИРОВКА (ПОВЫШЕНИЕ КВАЛИФИКАЦИИ)</div>
-    <div class="news-title">Для реализации задач проекта предусмотрена стажировка (повышение квалификации) за пределами РК</div>
-    <div class="news-description">Планируется в 2025 году</div>
-</div>
-
-    <div class="news-item">
-        <div class="category">УЧАСТИЕ В МЕЖДУНАРОДНОЙ КОНФЕРЕНЦИИ</div>
-        <div class="news-title">Участие в конференции по исследованию аномального поведения респондента</div>
-        <div class="news-description">Планируется в 2025 году и в 2026 году</div>
-        <div class="news-description">Презентация результатов исследования на международной платформе</div>
-    </div>
-
-    <div class="news-item">
-        <div class="category">ФУНДАМЕНТАЛЬНЫЕ И ПРИКЛАДНЫЕ РАЗРАБОТКИ</div>
-        <div class="news-title">Разработка API сервис и мобильное приложение с распознаванием мошенничества в телефонных разговорах и текстовых сообщениях.</div>
-        <div class="news-description">Планируются в 2027 году</div>
-        <div class="news-description">Будет разработан и протестирован API сервис и мобильное приложение с распознаванием мошенничества в телефонных разговорах и текстовых сообщениях.</div>
-    </div>
-
-    <div class="news-item">
-        <div class="category">СЕРТИФИКАТЫ</div>
-        <div class="news-title">Получение сертификата.</div>
-        <div class="news-description">Планируется в 2027 году</div>
-        <div class="news-description">Сертификация результатов исследований</div>
-    </div>
-</div>
-
-<script>
-    function showMenu() {
-        var navLinks = document.getElementById("navLinks");
-        navLinks.style.right = "0";
-    }
-
-    function hideMenu() {
-        var navLinks = document.getElementById("navLinks");
-        navLinks.style.right = "-200px";
-    }
-</script>
-<script src="/blog.js"></script>
-</body>
-<footer class="page-footer font-small unique-color-dark" style="padding-left: 0px;">
-    <section class="footer">
-        <div style="background-color: #6351ce;">
-            <div class="container">
-
-                <!-- Grid row-->
-
-                <!-- Grid row-->
-
-            </div>
-        </div>
-
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left mt-5">
-
-            <!-- Grid row -->
-            <div class="row mt-3">
-
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-5 mx-auto mb-4">
-
-                    <!-- Content -->
-                    <h6 class="text-uppercase font-weight-bold">НАУЧНО-ТЕХНИЧЕСКИЙ ПРОЕКТ</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>AP27510301 Разработка технологии распознавания мошеннических действий в процессе телефонного разговора и/или обмена текстовыми сообщениями в мессенджерах на основе алгоритмов искусственного интеллекта
-                        в рамках грантового финансирования по конкурсу молодых ученых по научным и (или) научно-техническим проектам на
-                        2025-2027 годы</p>
-
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="site-logo" href="index.html">AP27510301</a>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Открыть меню</span>
+                <span class="nav-toggle__bars" aria-hidden="true"></span>
+            </button>
+            <nav class="site-nav" data-nav id="primary-navigation">
+                <div class="site-nav__inner">
+                <button class="nav-close" type="button" data-nav-close aria-label="Закрыть меню">
+                    <span class="sr-only">Закрыть меню</span>
+                    <span class="nav-close__icon" aria-hidden="true"></span>
+                </button>
+                <ul class="site-nav__list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="oProjecte.html">О проекте</a></li>
+                    <li><a href="about.html">Исследовательская группа</a></li>
+                    <li><a href="course.html">План работ</a></li>
+                    <li><a href="blog.html" aria-current="page">Результаты</a></li>
+                </ul>
                 </div>
-                <!-- Grid column -->
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <section class="hero hero--compact">
+            <div class="container hero__content">
+                <p class="status-pill">Научные и прикладные результаты</p>
+                <h1 class="hero__title">Публикации, стажировки и планы проекта</h1>
+                <p class="hero__text">
+                    Здесь собраны ключевые публикации, отчёты о стажировках и планы по внедрению разработанных технологий.
+                </p>
+            </div>
+        </section>
 
-               <!--  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <section class="section">
+            <div class="container news-list">
+                <article class="news-item">
+                    <p class="category">Публикации · 2025</p>
+                    <h2 class="section-title">Опубликованные научные статьи</h2>
+                    <p><strong>1.</strong> “DETECTION OF FRAUDULENT ACTIVITIES DURING PHONE CALLS USING ARTIFICIAL INTELLIGENCE”. Авторы: Карим Шарипов, Дархан Куанышбай, Азамат Серек, Айсултан Шойынбек, Темирлан Шойынбек, Бахтиёр Мералиев, Максим Желудков. Журнал «Интернаука» №37(401), 2025. <a href="https://www.internauka.org/journal/science/internauka/401" target="_blank" rel="noopener">Читать онлайн</a>.</p>
+                    <p><strong>2.</strong> “A REVIEW ON EXISTING METHODS OF FRAUD DETECTION IN MESSENGERS”. Авторы: Maxim Zheludkov, Aisultan Shoiynbek, Karim Sharipov, Azamat Serek, Temirlan Shoiynbek, Darkhan Kuanyshbay, Bakhtiyor Meraliyev. Журнал World Science 3(89), 2025. <a href="https://doi.org/10.31435/ws.3(89).2025.3363" target="_blank" rel="noopener">DOI: 10.31435/ws.3(89).2025.3363</a>.</p>
+                </article>
 
-                
-                    <h6 class="text-uppercase font-weight-bold">ССЫЛКИ</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <article class="news-item">
+                    <p class="category">Стажировка · Universiti Putra Malaysia</p>
+                    <h2 class="section-title">Повышение квалификации (25 октября — 2 ноября 2025)</h2>
                     <p>
-                        <a href="../index.html">ГЛАВНАЯ</a>
+                        Команда прошла исследовательскую стажировку в Universiti Putra Malaysia (Факультет Computer Science and Information Technology).
+                        Получены отчёты, планы стажировки и сертификаты участников. Материалы доступны для просмотра:
                     </p>
-                    <p>
-                        <a href="../oProjecte.html">О ПРОЕКТЕ</a>
-                    </p>
-                    <p>
-                        <a href="../about.html">ИССЛЕДОВАТЕЛЬСКАЯ ГРУППА</a>
-                    </p>
-                    <p>
-                        <a href="../course.html">ПЛАН РЕАЛИЗАЦИИ РАБОТ</a>
-                    </p>
-                    <p>
-                        <a href="../blog.html">НАУЧНЫЕ И ПРИКЛАДНЫЕ РЕЗУЛЬТАТЫ</a>
-                    </p>
-
-                </div> -->
-                <!-- Grid column -->
-
-                <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4">
-
-                    <!-- Links -->
-                    <h6 class="text-uppercase font-weight-bold">КОНТАКТНАЯ ИНФОРМАЦИЯ</h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <i class="fas fa-home mr-3"></i> НАО «Университет Нархоз» <br>ул. Жандосова, 55 г. Алматы, Казахстан, 050035</p>
-                    <p>
-                        <i class="fas fa-envelope mr-3"></i><a href="mailto:shoiynbek.temirlan@narxoz.kz" > shoiynbek.temirlan@narxoz.kz</a>
-                    <div class="icons">
-                    <!--    <a href="https://www.facebook.com/groups/625242165468729">
-                            <i class="fab fa-facebook"> </i>
-                        </a>-->
-                        <!--                <i class="fab fa-twitter"></i>-->
-                        <!--                <i class="fab fa-instagram"></i>-->
-                        <!--                <i class="fab fa-linkedin"></i>-->
+                    <div class="gallery-links">
+                        <a href="#" data-modal-target="modal-report">Research Report</a><br />
+                        <a href="#" data-modal-target="modal-plan">Plan of the Internship</a><br />
+                        <a href="#" data-modal-target="modal-aisultan">Certificate (Shoiynbek Aisultan)</a><br />
+                        <a href="#" data-modal-target="modal-darkhan">Certificate (Kuanyshbay Darkhan)</a><br />
+                        <a href="#" data-modal-target="modal-temirlan">Certificate (Shoiynbek Temirlan)</a>
                     </div>
+                </article>
 
-                </div>
+                <article class="news-item">
+                    <p class="category">Участие в конференциях</p>
+                    <h2 class="section-title">Планы на 2026–2027 годы</h2>
+                    <p>Запланировано участие в международных конференциях по исследованию аномального поведения респондентов и презентация результатов проекта на глобальных площадках.</p>
+                </article>
 
+                <article class="news-item">
+                    <p class="category">Фундаментальные и прикладные разработки</p>
+                    <h2 class="section-title">API-сервис и мобильное приложение</h2>
+                    <p>В 2027 году будет разработан и апробирован API-сервис и мобильное приложение с поддержкой распознавания мошенничества в голосе и тексте.</p>
+                </article>
 
+                <article class="news-item">
+                    <p class="category">Сертификаты</p>
+                    <h2 class="section-title">Сертификация результатов</h2>
+                    <p>Сертификация прикладных разработок запланирована на 2027 год и будет сопровождаться публикацией технической документации.</p>
+                </article>
             </div>
+        </section>
+    </main>
 
-
+    <footer class="site-footer">
+        <div class="container site-footer__grid">
+            <div>
+                <p class="status-pill">Научно-технический проект</p>
+                <p>
+                    AP27510301 — «Разработка технологии распознавания мошеннических действий в процессе телефонного разговора и/или обмена
+                    текстовыми сообщениями в мессенджерах на основе алгоритмов искусственного интеллекта».
+                </p>
+            </div>
+            <div>
+                <strong>Навигация</strong>
+                <ul class="footer-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="oProjecte.html">О проекте</a></li>
+                    <li><a href="about.html">Команда</a></li>
+                    <li><a href="course.html">План работ</a></li>
+                    <li><a href="blog.html">Результаты</a></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Контакты</strong>
+                <p>НАО «Университет Нархоз»<br />ул. Жандосова, 55, Алматы, Казахстан, 050035</p>
+                <a href="mailto:shoiynbek.temirlan@narxoz.kz">shoiynbek.temirlan@narxoz.kz</a>
+            </div>
         </div>
+        <div class="site-footer__bottom">
+            <small>© 2025 Университет Нархоз. Все права защищены.</small>
+        </div>
+    </footer>
 
-    </section>
-    <script src="index.js"></script>
-</footer>
+    <!-- Modals -->
+    <div class="modal" id="modal-report" role="dialog" aria-modal="true">
+        <div class="modal__content">
+            <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="aboutImage/research_report.jpg" alt="Research report" />
+        </div>
+    </div>
+
+    <div class="modal" id="modal-plan" role="dialog" aria-modal="true">
+        <div class="modal__content">
+            <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="aboutImage/planOfTheInternship.jpg" alt="Plan of the internship" />
+        </div>
+    </div>
+
+    <div class="modal" id="modal-aisultan" role="dialog" aria-modal="true">
+        <div class="modal__content">
+            <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="aboutImage/certificate_Aisultan.jpg" alt="Certificate Shoiynbek Aisultan" />
+        </div>
+    </div>
+
+    <div class="modal" id="modal-darkhan" role="dialog" aria-modal="true">
+        <div class="modal__content">
+            <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="aboutImage/certificate_Darkhan.jpg" alt="Certificate Kuanyshbay Darkhan" />
+        </div>
+    </div>
+
+    <div class="modal" id="modal-temirlan" role="dialog" aria-modal="true">
+        <div class="modal__content">
+            <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="aboutImage/certificate_Temirlan.jpg" alt="Certificate Shoiynbek Temirlan" />
+        </div>
+    </div>
+
+    <script src="main.js" defer></script>
+</body>
 </html>
+
