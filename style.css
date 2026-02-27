@@ -352,6 +352,9 @@ ul {
 }
 
 .team-card {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: stretch;
     background: var(--color-surface);
     border-radius: var(--radius-md);
     padding: 1.5rem;
