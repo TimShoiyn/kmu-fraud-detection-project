@@ -443,6 +443,16 @@ ul {
     font-weight: 600;
 }
 
+.plan-result {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.plan-result p {
+    margin: 0;
+}
+
 .news-list {
     display: flex;
     flex-direction: column;
@@ -684,4 +694,3 @@ ul {
         gap: 0.35rem;
     }
 }
-
