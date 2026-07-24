@@ -371,6 +371,26 @@ ul {
     border: 3px solid rgba(255, 255, 255, 0.6);
 }
 
+.team-card__avatar,
+.profile-card__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.team-card__avatar {
+    width: 120px;
+    height: 120px;
+    font-size: 2rem;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
 .team-card__role {
     color: var(--color-muted);
     font-size: 0.95rem;
@@ -482,6 +502,16 @@ ul {
 
 .gallery-links a:hover {
     text-decoration: underline;
+}
+
+.content-card a[href^="http"],
+.news-item a[href^="http"],
+.plan-result a[href^="http"],
+.plan-table a[href^="http"],
+.profile-card a[href^="http"],
+.team-card__links a[href^="http"] {
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .certificate-grid {
@@ -599,6 +629,12 @@ ul {
     margin: 0 auto 1rem;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.profile-card__avatar {
+    width: 160px;
+    height: 160px;
+    font-size: 2.5rem;
 }
 
 .status-pill {
